@@ -1,0 +1,15 @@
+body{
+    margin: auto;
+}
+
+canvas{
+    border-radius: 12px;
+}
+
+.vertical-line{
+    width: 1px;
+    display: flex;
+    align-self: center;
+    height: 370px;
+    background-color: gray;
+}
