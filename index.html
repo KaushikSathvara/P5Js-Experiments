@@ -7,8 +7,19 @@
     <meta name="description" content="Double pandulam experiment with p5 JS library">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYP5WF5QQF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FYP5WF5QQF');
+    </script>
 </head>
 
 <body>
@@ -20,13 +31,17 @@
         </div>
         <div class="row mt-3">
             <div class="mb-3 mt-3">
-                In physics and mathematics, in the area of dynamical systems, a double pendulum is a pendulum with
+                In physics and mathematics, in the area of dynamical systems, a double pendulum is a pendulum
+                with
                 another
-                pendulum attached to its end, and is a simple physical system that exhibits rich dynamic behavior with a
-                strong sensitivity to initial conditions. The motion of a double pendulum is governed by a set of
+                pendulum attached to its end, and is a simple physical system that exhibits rich dynamic
+                behavior with a
+                strong sensitivity to initial conditions. The motion of a double pendulum is governed by a set
+                of
                 coupled
                 ordinary differential equations and is chaotic.
-                <a class="page-link mt-3 mb-3" href="https://en.wikipedia.org/wiki/Double_pendulum">Learn More at
+                <a class="page-link mt-3 mb-3" href="https://en.wikipedia.org/wiki/Double_pendulum">Learn More
+                    at
                     Wikipedia</a>
             </div>
             <div class="col-md-6 col-12 justify-content-center d-flex">
@@ -35,18 +50,18 @@
             <div class="col-md-6 col-12 justify-content-center justify-content-md-start d-flex">
                 <div class="mt-4 mb-4">
                     <ul class="list-group">
-                        <li class="list-group-item">Length S1<input class="custom-range" min="50" max="150" value="90"
-                                type="range" id="range_s1"></li>
-                        <li class="list-group-item">Length S2<input class="custom-range" min="50" max="150" value="90"
-                                type="range" id="range_s2"></li>
+                        <li class="list-group-item">Length S1<input class="custom-range" min="50" max="150"
+                                value="90" type="range" id="range_s1"></li>
+                        <li class="list-group-item">Length S2<input class="custom-range" min="50" max="150"
+                                value="90" type="range" id="range_s2"></li>
                         <li class="list-group-item">Mass of M1<input class="custom-range" min="1" value="35"
                                 type="range" id="range_m1"></li>
                         <li class="list-group-item">Mass of M2<input class="custom-range" min="1" value="35"
                                 type="range" id="range_m2"></li>
-                        <li class="list-group-item">Gravity (1G is default)<input class="custom-range" min="1" max="10"
-                                type="range" value="1" id="range_g"></li>
-                        <li class="list-group-item">Resistance (MAX means 0 Resistance) <input class="custom-range"
-                                type="range" value="99" id="range_R"></li>
+                        <li class="list-group-item">Gravity (1G is default)<input class="custom-range" min="1"
+                                max="10" type="range" value="1" id="range_g"></li>
+                        <li class="list-group-item">Resistance (MAX means 0 Resistance) <input
+                                class="custom-range" type="range" value="99" id="range_R"></li>
                     </ul>
                     <div class="mt-3">
                         <button class="btn btn-info" id='reset-btn'
